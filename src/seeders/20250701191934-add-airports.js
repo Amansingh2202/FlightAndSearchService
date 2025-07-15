@@ -18,38 +18,38 @@ module.exports = {
     */
           
 
-    await queryInterface.bulkInsert('Airports', [
+    // await queryInterface.bulkInsert('Airports', [
       
-     {
-      name:"Indira Gandhi International Airport",
-      cityId: 2,
-      createdAt: new Date(),
-      updatedAt: new Date()
+    //  {
+    //   name:"Indira Gandhi International Airport",
+    //   cityId: 2,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
 
-     }
-     ,{
-      name:"Chhatrapati Shivaji Maharaj International Airport",
-      cityId: 3,
-      createdAt: new Date(),
-      updatedAt: new Date()
-     },
-     {
-      name:"Chennai International Airport",
-      cityId: 4,
-      createdAt: new Date(),
-      updatedAt: new Date()
-     }
-     ,{
-      name:"Kempegowda International Airport",
-      cityId: 1,
-      createdAt: new Date(),
-      updatedAt: new Date()
-     }
+    //  }
+    //  ,{
+    //   name:"Chhatrapati Shivaji Maharaj International Airport",
+    //   cityId: 3,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    //  },
+    //  {
+    //   name:"Chennai International Airport",
+    //   cityId: 4,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    //  }
+    //  ,{
+    //   name:"Kempegowda International Airport",
+    //   cityId: 1,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    //  }
      
 
 
 
-      ], {});
+    //   ], {});
     },
 
 
