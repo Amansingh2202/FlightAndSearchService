@@ -25,7 +25,7 @@ class FlightRepository {
           }
           return filter;
         }
-    
+
              async createFlight(data){
         try{
             const flight=await Flights.create(data);
@@ -35,7 +35,7 @@ class FlightRepository {
             console.error("Error creating flight:", error);
             throw error;
         }
-       
+
     }
     async getFlight(id) {
         try {
@@ -60,6 +60,23 @@ class FlightRepository {
             );
             return flights;
         } catch (error) {
+            console.error("Something went wrong in the repository:", error);
+            throw error;
+        }
+    }
+
+    async updateFlight(flightId,data)
+    {
+        try{
+            await Flights.update(data,{
+                where:{
+                    id:flightId
+                }
+            })
+            return true;
+
+        }
+        catch(erro){
             console.error("Something went wrong in the repository:", error);
             throw error;
         }
