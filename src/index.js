@@ -28,10 +28,10 @@ const setupAndStartServer = async () => {
     console.log(`🚀 Server started on PORT = ${PORT}`);
 
     // ✅ Optional: sync DB only if needed
-    // if (process.env.SYNC_DB) {
-    //   await db.sequelize.sync({ force: true });
-    //   console.log("🗄️ Database synced!");
-    // }
+    if (process.env.SYNC_DB) {
+      await db.sequelize.sync({ force: true });
+      console.log("🗄️ Database synced!");
+    }
 
     // ✅ Example test query
     // const city = await City.findOne({ where: { id: 2 } });
